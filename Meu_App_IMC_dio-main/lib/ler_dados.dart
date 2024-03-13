@@ -10,7 +10,7 @@ dynamic Ler_dado(String Texto, String tipo_saida) {
       saida = stdin.readLineSync(encoding: utf8);
       break;
     case 'double':
-      saida = double.parse(stdin.readLineSync(encoding: utf8) ?? '0');
+      saida = double.parse(stdin.readLineSync(encoding: utf8));
       break;
   }
   return saida;
