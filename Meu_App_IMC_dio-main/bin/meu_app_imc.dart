@@ -1,12 +1,13 @@
-import 'package:meu_app_imc/Pessoa.dart';
-import 'package:meu_app_imc/ler_dados.dart';
-import 'package:meu_app_imc/tratamento_saidas.dart';
+import 'package:meu_app_imc/models/Pessoa.dart';
+import 'package:meu_app_imc/service/ler_dados.dart';
+import 'package:meu_app_imc/service/tratamento_saidas.dart';
 
 void main(List<String> arguments) {
   var usuario = Pessoa(
-      Ler_dado('Digite seu Nome: ', 'String'),
-      Ler_dado('Digite seu Peso: ', 'double'),
-      Ler_dado('Digite sua Altura: ', 'double'));
+      LerConsole.nome(),
+      LerConsole.peso(),
+      LerConsole.altura()
+      );
 
   var imc = usuario.getPeso() / (usuario.getAltura() * usuario.getAltura());
   print(
