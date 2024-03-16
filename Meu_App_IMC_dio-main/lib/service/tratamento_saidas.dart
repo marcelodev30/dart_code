@@ -13,10 +13,10 @@ String saidas(double imc) {
     resultado = 'Obesidade grau I';
   }
   if (imc >= 35.0 && imc <= 39.9) {
-    resultado = 'Obesida de grau II';
+    resultado = 'Obesidade grau II';
   }
   if (imc >= 40.0) {
-    resultado = 'Obesida de grau III';
+    resultado = 'Obesidade grau III';
   }
   return resultado;
 }

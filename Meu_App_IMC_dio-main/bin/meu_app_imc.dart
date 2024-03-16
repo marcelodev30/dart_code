@@ -10,6 +10,6 @@ void main(List<String> arguments) {
       LerConsole.altura()
       );
 
-  final imc = Calcular.imc(usuario.getPeso(),usuario.getAltura());
-  print('Olá, ${usuario.getNome()}. Seu Índice de Massa Corporal (IMC) é $imc, o que indica um estado ${saidas(imc)}');
+  final imc = Calcular.imc(usuario.getPeso,usuario.getAltura);
+  print('Olá, ${usuario.getNome}. Seu Índice de Massa Corporal (IMC) é $imc, o que indica um estado ${saidas(imc)}');
 }

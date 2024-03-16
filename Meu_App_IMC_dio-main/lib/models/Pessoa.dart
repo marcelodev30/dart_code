@@ -10,11 +10,11 @@ class Pessoa {
  
   set setAltura(altura) => _altura = altura;
   
-  String getNome() => _nome;
+  String get getNome => _nome;
   
-  double getPeso() => _peso;
+  double get getPeso => _peso;
   
-  double getAltura() => _altura;
+  double get getAltura => _altura;
   
   Pessoa(nome, peso, altura) {
     _nome = nome;
